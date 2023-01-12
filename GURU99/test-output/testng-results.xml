@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Browser Opened]]>
+    </line>
+    <line>
+      <![CDATA[Login Page Opened]]>
+    </line>
+    <line>
+      <![CDATA[Current Page is Home Page as Expected]]>
+    </line>
+    <line>
+      <![CDATA[Browser Closed]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-01-12T13:14:41 IST" name="Default suite" finished-at="2023-01-12T13:14:52 IST" duration-ms="11346">
+    <groups>
+    </groups>
+    <test started-at="2023-01-12T13:14:41 IST" name="Default test" finished-at="2023-01-12T13:14:52 IST" duration-ms="11346">
+      <class name="TestClasses.TechPanda">
+        <test-method is-config="true" signature="Extends()[pri:0, instance:TestClasses.TechPanda@35a9782c]" started-at="2023-01-12T13:14:41 IST" name="Extends" finished-at="2023-01-12T13:14:41 IST" duration-ms="243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Extends -->
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:TestClasses.TechPanda@35a9782c]" started-at="2023-01-12T13:14:41 IST" name="OpenBrowser" finished-at="2023-01-12T13:14:50 IST" duration-ms="9086" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser Opened]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method signature="IndexPage()[pri:0, instance:TestClasses.TechPanda@35a9782c]" started-at="2023-01-12T13:14:50 IST" name="IndexPage" finished-at="2023-01-12T13:14:52 IST" duration-ms="2197" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Login Page Opened]]>
+            </line>
+            <line>
+              <![CDATA[Current Page is Home Page as Expected]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- IndexPage -->
+        <test-method is-config="true" signature="Close()[pri:0, instance:TestClasses.TechPanda@35a9782c]" started-at="2023-01-12T13:14:52 IST" name="Close" finished-at="2023-01-12T13:14:52 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser Closed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Close -->
+        <test-method is-config="true" signature="ExtendEnd()[pri:0, instance:TestClasses.TechPanda@35a9782c]" started-at="2023-01-12T13:14:53 IST" name="ExtendEnd" finished-at="2023-01-12T13:14:54 IST" duration-ms="1866" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtendEnd -->
+      </class> <!-- TestClasses.TechPanda -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
