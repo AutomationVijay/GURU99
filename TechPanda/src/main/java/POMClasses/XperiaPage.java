@@ -5,15 +5,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class XperiaPage 
+public class XperiaPage
 {
 	@FindBy(xpath = "//span[@class=\"price\"]") private WebElement price;
-	
+
 	public XperiaPage(WebDriver POM)
 	{
 		PageFactory.initElements(POM, this);
 	}
-	
+
 	public String GetPrice()
 	{
 		String amt = price.getText();

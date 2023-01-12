@@ -23,7 +23,7 @@ public class Mobile {
 		String t = amount.getText();
 		return t;
 	}
-	
+
 	public void OpenXperia()
 	{
 		XperiOpen.click();

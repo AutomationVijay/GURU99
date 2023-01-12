@@ -28,9 +28,9 @@ import POMClasses.XperiaPage;
 public class TestTechPanda extends BaseClass {
 	ExtentReports extent = new ExtentReports();
 	ExtentSparkReporter spark = new ExtentSparkReporter("ExtendReport.html");
-	
+
 	//static final Logger logs = (Logger) LogManager.getLogger("TestTechPanda.class");
-	
+
 	Index ind;
 	Mobile mob;
 	XperiaPage exp;
@@ -57,13 +57,13 @@ public class TestTechPanda extends BaseClass {
 
 	}
 
-	@BeforeMethod
+	@BeforeMethod()
 	public void ExtendRep() {
 
 		extent.attachReporter(spark);
 	}
 
-	@Test()
+	@Test
 	public void IndexPage() {
 		try {
 			ExtentTest test = extent.createTest("Verify Report and Analytics");
@@ -85,7 +85,7 @@ public class TestTechPanda extends BaseClass {
 
 	}
 
-	@Test
+	@Test()
 	public void Mobile() {
 		try {
 			ExtentTest test = extent.createTest("Verify Report and Analytics");
@@ -119,7 +119,7 @@ public class TestTechPanda extends BaseClass {
 		}
 	}
 
-	@Test
+	@Test()
 	public void XperiaMobile() {
 		try {
 			ExtentTest test = extent.createTest("Verify Report and Analytics");
@@ -170,7 +170,7 @@ public class TestTechPanda extends BaseClass {
 
 	}
 
-	@AfterMethod
+	@AfterMethod()
 	public void FailedCase(ITestResult result) {
 		try {
 			if (ITestResult.FAILURE == result.getStatus()) {
@@ -192,7 +192,7 @@ public class TestTechPanda extends BaseClass {
 		}
 	}
 
-	@AfterTest
+	@AfterTest()
 	public void extRep() {
 		extent.flush();
 

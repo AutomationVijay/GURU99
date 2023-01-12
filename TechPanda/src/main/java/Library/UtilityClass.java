@@ -12,7 +12,7 @@ import org.openqa.selenium.io.FileHandler;
 
 import net.bytebuddy.utility.RandomString;
 
-public class UtilityClass 
+public class UtilityClass
 {
 	public static String getData(String key) throws IOException
 	{
@@ -23,17 +23,17 @@ public class UtilityClass
 			String value = property.getProperty(key);
 			return value;
 	}
-	
+
 	public static void CaptureScreenShot(WebDriver driver, int TCID) throws IOException
 	{
 			File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 			String rs = RandomString.make(2);
 			System.out.println(TCID);
-			File dest = new File("F:\\MyJAVA\\Eclipse\\TechPanda\\ScreenShot"+TCID+""+rs+".jpg");
+			File dest = new File("F:\\MyJAVA\\Eclipse\\TechPanda\\ScreenShot\\"+TCID+""+rs+".jpg");
 			FileHandler.copy(src, dest);
-		
-		
+
+
 	}
-	
+
 
 }
