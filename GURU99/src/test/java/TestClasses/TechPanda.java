@@ -19,30 +19,27 @@ import LibraryClass.BaseClass;
 import LibraryClass.UtilityClass;
 import POMClasses.Index;
 
-public class TechPanda extends BaseClass{
+public class TechPanda extends BaseClass {
 
 	ExtentReports extent;
 	ExtentSparkReporter spark;
-	
+
 	Index ind;
 
 	private static Logger logger = LogManager.getLogger(TechPanda.class);
 
 	/*
-	  public static void main(String[] args) {
-	  System.out.println("logger Tech Panda");
-	  
-	  logger.info("This is information message or Passed Tech Panda");
-	  logger.trace("This is trace message"); 
-	  logger.error("This is error message");
-	  logger.debug("This is debug message"); 
-	  logger.warn("This is warn message");
-	  logger.fatal("This is fatal message"); 
-	  // logger.off("This is off message");
-	  
-	  System.out.println("logger end");
-	  */
-	 
+	 * public static void main(String[] args) {
+	 * System.out.println("logger Tech Panda");
+	 * 
+	 * logger.info("This is information message or Passed Tech Panda");
+	 * logger.trace("This is trace message"); logger.error("This is error message");
+	 * logger.debug("This is debug message"); logger.warn("This is warn message");
+	 * logger.fatal("This is fatal message"); // logger.off("This is off message");
+	 * 
+	 * System.out.println("logger end");
+	 */
+
 	@BeforeSuite
 	public void Extends() {
 		extent = new ExtentReports();
@@ -63,13 +60,13 @@ public class TechPanda extends BaseClass{
 		ind = new Index(driver);
 
 	}
-	
+
 	@Test()
 	public void IndexPage() {
 		try {
 			ExtentTest test = extent.createTest("Check Login Function");
 			String currentTitle = driver.getTitle();
-			logger.info("Login Page Opened "+ currentTitle);
+			logger.info("Login Page Opened " + currentTitle);
 			test.pass("Login Page Opened");
 			Reporter.log("Login Page Opened", true);
 			boolean ExpectedFirst = currentTitle.contains(UtilityClass.getData("homepage"));
@@ -78,33 +75,33 @@ public class TechPanda extends BaseClass{
 				logger.info("Current Page is Home Page as Expected");
 				test.pass("Current Page is Home Page as Expected");
 				Reporter.log("Current Page is Home Page as Expected", true);
-				
+
 			} else {
 				logger.info("Current Page is Not Home Page as Expected");
 				test.fail("Page is not Home Page as Expected");
 				Reporter.log("Page is not Home Page as Expected", true);
-				
+
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 
 	}
+
 	@AfterClass
-	public void Close()
-	{
+	public void Close() {
 		ExtentTest test = extent.createTest("Close Browser");
 		logger.info("Browser Closed");
 		test.pass("Browser Closed");
 		Reporter.log("Browser Closed", true);
-		
+
 	}
+
 	@AfterSuite
-	public void ExtendEnd()
-	{
+	public void ExtendEnd() {
 		driver.close();
 		extent.flush();
-		
+
 	}
 
 }

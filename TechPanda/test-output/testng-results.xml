@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Browser Opened]]>
+    </line>
+    <line>
+      <![CDATA[Page is not Home Page as Expected]]>
+    </line>
+    <line>
+      <![CDATA[Page is not Mobile Page as Expected]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-01-12T13:12:42 IST" name="Default suite" finished-at="2023-01-12T13:13:19 IST" duration-ms="36908">
+    <groups>
+    </groups>
+    <test started-at="2023-01-12T13:12:42 IST" name="Default test" finished-at="2023-01-12T13:13:19 IST" duration-ms="36908">
+      <class name="TestClasses.TestTechPanda">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:TestClasses.TestTechPanda@4e096385]" started-at="2023-01-12T13:12:42 IST" name="OpenBrowser" finished-at="2023-01-12T13:12:53 IST" duration-ms="10989" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser Opened]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method is-config="true" signature="ExtendRep()[pri:0, instance:TestClasses.TestTechPanda@4e096385]" started-at="2023-01-12T13:12:53 IST" name="ExtendRep" finished-at="2023-01-12T13:12:53 IST" duration-ms="211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtendRep -->
+        <test-method signature="CartVerification()[pri:0, instance:TestClasses.TestTechPanda@4e096385]" started-at="2023-01-12T13:12:53 IST" name="CartVerification" finished-at="2023-01-12T13:13:05 IST" duration-ms="11935" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Got Error Message expected [Some of the products cannot be ordered in requested quantity.] but found [[[ChromeDriver: chrome on WINDOWS (f4946c74574dbdd80aa5657f5df53e7b)] -> xpath: //span[text()='Some of the products cannot be ordered in requested quantity.']]]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Got Error Message expected [Some of the products cannot be ordered in requested quantity.] but found [[[ChromeDriver: chrome on WINDOWS (f4946c74574dbdd80aa5657f5df53e7b)] -> xpath: //span[text()='Some of the products cannot be ordered in requested quantity.']]]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at TestClasses.TestTechPanda.CartVerification(TestTechPanda.java:168)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CartVerification -->
+        <test-method is-config="true" signature="FailedCase(org.testng.ITestResult)[pri:0, instance:TestClasses.TestTechPanda@4e096385]" started-at="2023-01-12T13:13:05 IST" name="FailedCase" finished-at="2023-01-12T13:13:06 IST" duration-ms="545" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CartVerification status=FAILURE method=TestTechPanda.CartVerification()[pri:0, instance:TestClasses.TestTechPanda@4e096385] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FailedCase -->
+        <test-method is-config="true" signature="ExtendRep()[pri:0, instance:TestClasses.TestTechPanda@4e096385]" started-at="2023-01-12T13:13:06 IST" name="ExtendRep" finished-at="2023-01-12T13:13:06 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtendRep -->
+        <test-method signature="IndexPage()[pri:0, instance:TestClasses.TestTechPanda@4e096385]" started-at="2023-01-12T13:13:06 IST" name="IndexPage" finished-at="2023-01-12T13:13:06 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Page is not Home Page as Expected]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- IndexPage -->
+        <test-method is-config="true" signature="FailedCase(org.testng.ITestResult)[pri:0, instance:TestClasses.TestTechPanda@4e096385]" started-at="2023-01-12T13:13:06 IST" name="FailedCase" finished-at="2023-01-12T13:13:06 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=IndexPage status=SUCCESS method=TestTechPanda.IndexPage()[pri:0, instance:TestClasses.TestTechPanda@4e096385] output=Page is not Home Page as Expected]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FailedCase -->
+        <test-method signature="Mobile()[pri:0, instance:TestClasses.TestTechPanda@4e096385]" started-at="2023-01-12T13:13:06 IST" name="Mobile" finished-at="2023-01-12T13:13:06 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Page is not Mobile Page as Expected]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Mobile -->
+        <test-method is-config="true" signature="ExtendRep()[pri:0, instance:TestClasses.TestTechPanda@4e096385]" started-at="2023-01-12T13:13:06 IST" name="ExtendRep" finished-at="2023-01-12T13:13:06 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtendRep -->
+        <test-method is-config="true" signature="FailedCase(org.testng.ITestResult)[pri:0, instance:TestClasses.TestTechPanda@4e096385]" started-at="2023-01-12T13:13:06 IST" name="FailedCase" finished-at="2023-01-12T13:13:06 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Mobile status=SUCCESS method=TestTechPanda.Mobile()[pri:0, instance:TestClasses.TestTechPanda@4e096385] output=Page is not Mobile Page as Expected]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FailedCase -->
+        <test-method signature="XperiaMobile()[pri:0, instance:TestClasses.TestTechPanda@4e096385]" started-at="2023-01-12T13:13:06 IST" name="XperiaMobile" finished-at="2023-01-12T13:13:16 IST" duration-ms="10086" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- XperiaMobile -->
+        <test-method is-config="true" signature="ExtendRep()[pri:0, instance:TestClasses.TestTechPanda@4e096385]" started-at="2023-01-12T13:13:06 IST" name="ExtendRep" finished-at="2023-01-12T13:13:06 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtendRep -->
+        <test-method is-config="true" signature="FailedCase(org.testng.ITestResult)[pri:0, instance:TestClasses.TestTechPanda@4e096385]" started-at="2023-01-12T13:13:16 IST" name="FailedCase" finished-at="2023-01-12T13:13:16 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=XperiaMobile status=SUCCESS method=TestTechPanda.XperiaMobile()[pri:0, instance:TestClasses.TestTechPanda@4e096385] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FailedCase -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:TestClasses.TestTechPanda@4e096385]" started-at="2023-01-12T13:13:16 IST" name="CloseBrowser" finished-at="2023-01-12T13:13:18 IST" duration-ms="2403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="extRep()[pri:0, instance:TestClasses.TestTechPanda@4e096385]" started-at="2023-01-12T13:13:18 IST" name="extRep" finished-at="2023-01-12T13:13:19 IST" duration-ms="628" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extRep -->
+      </class> <!-- TestClasses.TestTechPanda -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
